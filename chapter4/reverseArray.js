@@ -15,7 +15,7 @@ function reverseArray(arr){
 	return newArr;
 }
 
-function swap(arr,i, j){
+function swapArray(arr,i, j){
 	var temp = arr[i];
 	arr[i] = arr[j];
 	arr[j] = temp;
@@ -25,6 +25,6 @@ function swap(arr,i, j){
 function reverseArrayInPlace(arr){
 	var temp = 0;
 	for(var i = 0; i < Math.floor(arr.length / 2); i++){
-		swap(arr, i,arr.length -1 -i);
+		swapArray(arr, i,arr.length -1 -i);
 	}
 }
