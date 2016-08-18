@@ -30,3 +30,23 @@ function some(arr, func){
 	}
 	return false;
 }
+
+
+//Author's solution code.
+
+
+function every(array, predicate) {
+  for (var i = 0; i < array.length; i++) {
+    if (!predicate(array[i]))
+      return false;
+  }
+  return true;
+}
+
+function some(array, predicate) {
+  for (var i = 0; i < array.length; i++) {
+    if (predicate(array[i]))
+      return true;
+  }
+  return false;
+}
