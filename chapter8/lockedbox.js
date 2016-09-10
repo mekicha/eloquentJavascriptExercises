@@ -24,7 +24,8 @@ function withBoxUnlocked(body) {
   if (box.locked == true)
     box.unlock();
   try {
-    body();}
+    return body();
+  }
   finally {
     box.lock();
   }
